@@ -117,3 +117,28 @@ nav a:hover::before {
   width: 100%
 }
 >>>>>>> daniel_branch
+
+/* Portfolio Gallery */
+div.gallery {
+  display: inline-block;
+  margin: 10px;  
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 180px;
+  height: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+  /*End of Portfolio Gallery */
