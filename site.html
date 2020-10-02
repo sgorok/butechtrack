@@ -5,6 +5,34 @@ if($_POST["message"]) {
 ?>
 <!DOCTYPE html>
 <html>
+
+      <!--I am just trying new things in this section -->
+      <!-- Add icon library -->
+      <!-- Make a navigation bar to go to different sections of the page
+            make an anchor
+            then id to the other part of the page you want to go to -->
+     <header class ="nav_bar_header">
+        <div class = "container">
+            
+            <img src ="images/tamidlogo.png " alt = "tamidlogo" class="tamidlogo" width="275px" height="75px"> 
+
+            <nav>
+                <ul> <!--unordered list and then each li is a list item-->
+                    <li><a href="#">Home</a></li> 
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Projects</a></li> 
+                    <li><a href="#">Blog</a></li> 
+                    <li><a href="#">Contact</a></li> 
+
+                </ul>
+
+            </nav>
+        </div>
+     </header>   
+
+
+
+    <!-- End of Navigation Bar--> 
     <head>
         <title>
             TAMID @ BU Technological Consulting Track!
@@ -14,17 +42,19 @@ if($_POST["message"]) {
 
     </head>
     <body>
+
+
         <header id = "header">
             <div class = "logo">
                 <!--Insert Logo Here-->
             </div>
 		<div class="content">
         	<div class="inner">
-        		<h1>Tech Consulting</h1>        	    
+        		<h1>Tech Consulting</h1>
         		<p>TAMID at Boston University</p>
             </div>
         </div>
-            
+
 
         </header>
         <h1>
@@ -126,9 +156,12 @@ if($_POST["message"]) {
                 <li><input type="reset" value="Reset" /></li>
             </ul>
         </form>
-        
+
             <ul class="icons">
                 <a href="https://www.linkedin.com/company/tamidbu/" class="fa fa-linkedin">
                 <a href="https://github.com/sgorok/butechtrack" class="fa fa-github">
             </ul>
+
+
+
 </html>
