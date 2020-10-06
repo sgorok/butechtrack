@@ -1,137 +1,217 @@
-/* Style all font awesome icons */
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    font-family: "Arial", sans-serif;
-  }
-  h1{
-    text-align: center;
-  }
-  h1,p{
-    text-align: center;
-  }
-  h2{
-    text-align: center;
-  }  
-/* Portfolio Gallery */
-div.gallery {
-  display: inline-block;
-  margin: 10px;  
-  border: 1px solid #ccc;
-  padding: 5px;
-  width: 180px;
-  height: 180px;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+article {
+display: grid;
+align-content: center;
+float: left;
+width: 100%;
+margin-bottom: 16px;
+padding: 0 8px;
+}
+.card {
+display: grid;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-left: auto;
+margin-right: auto;
 }
 
-div.gallery img {
+
+
+.column {
+align-content: center;
+float: left;
+width: 30%;
+margin-bottom: 16px;
+margin-left: auto;
+padding: 0 8px;
+
+}
+
+@media screen and (max-width: 650px) {
+.column {
+    width: 100%;
+    display: block;
+}
+}
+
+.title {
+color: rgb(56, 83, 236);
+}
+
+
+
+
+.container {
+width: 80%;
+margin: 0 auto;
+}
+
+.nav_bar_header {
+background: #add8e6; /*change the color later*/
+}
+
+.nav_bar_header::after { /* this changes the error caused by floating the nav to the right*/
+content: '';
+display: table;
+clear: both;
+}
+
+.tamidlogo {
+float: left;
+padding: 10px 0;
+}
+
+nav {
+float: right;
+}
+
+nav ul { /*specifies to only the navigation list*/
+margin: 0;
+padding: 0;
+list-style: none; /* takes the dots away from each list item*/
+}
+
+nav li{
+display: inline-block; /*puts the nav items in one line with eachother*/
+margin-left: 25px; /* spacing between each one*/
+padding-top: 40px;
+
+position: relative;
+}
+
+nav ul > li > a { /* extremely specific*/
+color: #444;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+nav a:hover {
+color: #000;
+}
+
+nav a::before{
+content: '';
+display: block;
+height: 5px;
+width: 100%; /* 100% of the list item so it will cover the whole word*/
+background-color: #444;
+
+position: absolute;
+top: 0; /* moves it to the top*/
+width: 0%;
+
+transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+width: 100%
+}
+
+
+/*----------Start of Portfolio Gallery-------------*/
+
+/*Overlap for exact sizing */
+.mySlides {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 85%;
+  width: 20px;
+  margin-top: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
   width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
   text-align: center;
 }
-  /*End of Portfolio Gallery */
 
-  .mySlides {box-sizing:border-box}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*---------End of Portfolio-----------*/
