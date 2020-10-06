@@ -5,6 +5,34 @@ if($_POST["message"]) {
 ?>
 <!DOCTYPE html>
 <html>
+
+      <!--I am just trying new things in this section -->
+      <!-- Add icon library -->
+      <!-- Make a navigation bar to go to different sections of the page
+            make an anchor
+            then id to the other part of the page you want to go to -->
+     <header class ="nav_bar_header">
+        <div class = "container">
+            
+            <img src ="images/tamidlogo.png " alt = "tamidlogo" class="tamidlogo" width="275px" height="75px"> 
+
+            <nav>
+                <ul> <!--unordered list and then each li is a list item-->
+                    <li><a href="#">Home</a></li> 
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Projects</a></li> 
+                    <li><a href="#">Blog</a></li> 
+                    <li><a href="#">Contact</a></li> 
+
+                </ul>
+
+            </nav>
+        </div>
+     </header>   
+
+
+
+    <!-- End of Navigation Bar--> 
     <head>
         <title>
             TAMID @ BU Technological Consulting Track!
@@ -14,17 +42,52 @@ if($_POST["message"]) {
 
     </head>
     <body>
+	    <!-- Isaac's code starts -->
+	    <div
+      style="
+        background-image: url('images/boston.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 50%;
+      "
+    >
+      <div
+        style="
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          font-family: Arial;
+        "
+      >
+        <h1 style="font-size: 50px">Technical Consulting</h1>
+        <h2 style="font-size: 40px">@ BU Tamid</h2>
+      </div>
+    </div>
+    <div class="content">
+      <div class="inner">
+        <h1>Tech Consulting</h1>
+        <p>TAMID at Boston University</p>
+      </div>
+    </div>
+	<!-- Isaac's code ends -->
+
+
         <header id = "header">
             <div class = "logo">
                 <!--Insert Logo Here-->
             </div>
 		<div class="content">
         	<div class="inner">
-        		<h1>Tech Consulting</h1>        	    
+        		<h1>Tech Consulting</h1>
         		<p>TAMID at Boston University</p>
             </div>
         </div>
-            
+
 
         </header>
         <h1>
@@ -33,10 +96,11 @@ if($_POST["message"]) {
         <p>
             Boston University's TAMID Group launched its first ever technological consulting track in the Fall 2020 semester...
         </p>
-        <h1>
-            Our Team
+        <h1 style = "text-align:center">
+            Meet the Team
         </h1>
-        <!-- This needs to be made for each person on the team-->
+<!-- MEET THE TEAM -->
+<article>
         <div class="row">
             <div class="column">
               <div class="card">
@@ -46,10 +110,27 @@ if($_POST["message"]) {
                       Shelli Gorokhovsky
                   </h2>
                   <p class="title">
-                      Co-Director of Technology
+                      Director of Technology
                   </p>
                   <p> Description</p>
                   <a href="www.linkedin.com/in/shelligorokhovsky">LinkedIn</a>
+                </div>
+            </div>
+         </div>
+         <!-- James -->
+         <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/James.jpeg" alt="James" style="width:100px">
+                <div class="container">
+                  <h2>
+                      James Heilberg
+                  </h2>
+                  <p class="title">
+                      Director of Technology
+                  </p>
+                  <p> Description</p>
+                  <a href="https://www.linkedin.com/in/james-heilberg-270510189/">LinkedIn</a>
                 </div>
             </div>
          </div>
@@ -57,7 +138,7 @@ if($_POST["message"]) {
          <div class="row">
             <div class="column">
               <div class="card">
-                <img src="images/Gil-Headshot.jpg" alt="Gil" style="width:100px">
+                <img src="images/Gil.jpeg" alt="Gil" style="width:100px">
                 <div class="container">
                   <h2>
                       Gil Lotzky
@@ -66,7 +147,7 @@ if($_POST["message"]) {
                       Engineer
                   </p>
                   <p> Description</p>
-                  <a href="https://www.linkedin.com/in/gil-lotzky/">LinkedIn</a>
+                  <a href="www.linkedin.com/in/gil-lotzky">LinkedIn</a>
                 </div>
             </div>
          </div>
@@ -83,7 +164,7 @@ if($_POST["message"]) {
                       Engineer
                   </p>
                   <p> Description</p>
-                  <a href="www.linkedin.com/in/...">LinkedIn</a>
+                  <a href="www.linkedin.com/in/isaacyamnitsky">LinkedIn</a>
                 </div>
             </div>
          </div>
@@ -100,45 +181,84 @@ if($_POST["message"]) {
                       Engineer
                   </p>
                   <p> Description</p>
-                  <a href="www.linkedin.com/in/...">LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/daniel-shimon-b5a545193/">LinkedIn</a>
                 </div>
             </div>
          </div>
+         <!--Samantha-->
+         <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/Samantha.jpeg" alt="Samantha" style="width:100px">
+                <div class="container">
+                  <h2>
+                      Samantha Puterman
+                  </h2>
+                  <p class="title">
+                      Engineer
+                  </p>
+                  <p> Description</p>
+                  <a href="https://www.linkedin.com/in/samanthaputerman/">LinkedIn</a>
+                </div>
+            </div>
+         </div>
+         <!-- Daniel Deli -->
+         <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/Deli.jpeg" alt="Deli" style="width:100px">
+                <div class="container">
+                  <h2>
+                      Daniel Delijani
+                  </h2>
+                  <p class="title">
+                      Engineer
+                  </p>
+                  <p> Description</p>
+                  <a href="https://www.linkedin.com/in/daniel-delijani-3b170919a/">LinkedIn</a>
+                </div>
+            </div>
+         </div>
+         <!-- Matan -->
+         <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/Matan.jpeg" alt="Matan" style="width:100px">
+                <div class="container">
+                  <h2>
+                      Matan Ziegel
+                  </h2>
+                  <p class="title">
+                      Engineer
+                  </p>
+                  <p> Description</p>
+                  <a href="https://www.linkedin.com/in/matan-ziegel-656049154/">LinkedIn</a>
+                </div>
+            </div>
+         </div>         
+         <!-- Ben -->
+         <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/Ben.jpeg" alt="Matan" style="width:100px">
+                <div class="container">
+                  <h2>
+                      Ben Steinfeld
+                  </h2>
+                  <p class="title">
+                      Engineer
+                  </p>
+                  <p> Description</p>
+                  <a href="https://www.linkedin.com/in/ben-steinfeld-688532185/">LinkedIn</a>
+                </div>
+            </div>
+         </div>    </article>   
+		 
 <!-- Portfolio Gallery Grid -->
-        <h1>
-            Our Work
-        </h1>
-        <div class="gallery">
-            <a target="_blank" href="link here">
-            <img src="image here" alt="Project Name" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the project here</div>
-        </div>
-        
-        <div class="gallery">
-            <a target="_blank" href="link here">
-            <img src="image here" alt="Project Name" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the project here</div>
-        </div>
-        
-        <div class="gallery">
-            <a target="_blank" href="link here">
-            <img src="image here" alt="Project Name" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the project here</div>
-        </div>
-        
-        <div class="gallery">
-            <a target="_blank" href="link here">
-            <img src="images/source" alt="Project Name" width="600" height="400">
-            </a>
-            <div class="desc">Add a description of the project here</div>
-        </div>
-    <!-- Slideshow container -->
-    <h1>Our Work</h1>
+            
+    
     <div class="slideshow-container">
-
+	<h1>Our Work</h1>
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
         <a target="_blank" href="link here">
@@ -149,7 +269,7 @@ if($_POST["message"]) {
         </div>
     
         <div class="mySlides fade">
-        <a target="_blank" href="link here"></a>
+        <a target="_blank" href="link here">
         <div class="numbertext">2 / 3</div>
         <img src="img2.jpg" style="width:100%">
         </a>
@@ -157,7 +277,7 @@ if($_POST["message"]) {
         </div>
     
         <div class="mySlides fade">
-        <a target="_blank" href="link here"></a>
+        <a target="_blank" href="link here">
         <div class="numbertext">3 / 3</div>
         <img src="img3.jpg" style="width:100%">
         </a>
@@ -176,7 +296,8 @@ if($_POST["message"]) {
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <script>var slideIndex = 1;
+    <script>
+	var slideIndex = 1;
         showSlides(slideIndex);
         
         // Next/previous controls
@@ -205,6 +326,8 @@ if($_POST["message"]) {
           dots[slideIndex-1].className += " active";
         }
     </script>
+<!-- End of Portfolio -->
+		 
 <!-- Contact -->
         <h1>Contact</h1>
         <form method="post" action="mailto:sgor@bu.edu">
@@ -227,9 +350,12 @@ if($_POST["message"]) {
                 <li><input type="reset" value="Reset" /></li>
             </ul>
         </form>
-        
+
             <ul class="icons">
                 <a href="https://www.linkedin.com/company/tamidbu/" class="fa fa-linkedin">
                 <a href="https://github.com/sgorok/butechtrack" class="fa fa-github">
             </ul>
+
+
+
 </html>
