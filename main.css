@@ -15,14 +15,7 @@
   }
   h2{
     text-align: center;
-  }
-  body,h1 {font-family: "Arial", sans-serif}
-  header{
-    background-color: #2194de ;
-    color: black;
-  }
-
-
+  }  
 /* Portfolio Gallery */
 div.gallery {
   display: inline-block;
