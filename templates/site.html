@@ -18,17 +18,22 @@ if($_POST["message"]) {
 
             <nav>
                 <ul> <!--unordered list and then each li is a list item-->
-                    <li><a href="#">Home</a></li> 
-                    <li><a href="#">About</a></li> 
-                    <li><a href="#">Projects</a></li> 
-                    <li><a href="#">Blog</a></li> 
-                    <li><a href="#">Contact</a></li> 
+                    <li><a href="">Home</a></li> 
+                    <li><a href="">About</a></li> 
+                    <li><a href="">Projects</a></li> 
+                    <li><a href="">Blog</a></li> 
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li> 
 
                 </ul>
 
             </nav>
         </div>
-     </header>   
+     </header>  
+
+     <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
 
 
 
@@ -331,7 +336,7 @@ if($_POST["message"]) {
     </script>
 <!-- End of Portfolio -->
 		 
-<!-- Contact -->
+<!-- Contact  (this section was moved to a new page)
         <h1>Contact</h1>
         <form method="post" action="mailto:sgor@bu.edu">
             <div class="fields">
@@ -358,7 +363,7 @@ if($_POST["message"]) {
                 <a href="https://www.linkedin.com/company/tamidbu/" class="fa fa-linkedin">
                 <a href="https://github.com/sgorok/butechtrack" class="fa fa-github">
             </ul>
-
+          -->
 
 
 </html>
