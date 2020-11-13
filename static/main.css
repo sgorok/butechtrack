@@ -16,12 +16,7 @@ margin-bottom: 16px;
 padding: 0 8px;
 }
 .card {
-display: grid;
-justify-content: center;
-align-items: center;
-position: relative;
-margin-left: auto;
-margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .row {
@@ -51,14 +46,15 @@ padding: 0 8px;
 color: rgb(56, 83, 236);
 }
 
-
-
-
 .container {
-width: 80%;
-margin: 0 auto;
+  padding: 0 16px;
 }
 
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .nav_bar_header {
 background: #add8e6; /*change the color later*/
 }
