@@ -24,7 +24,7 @@ article {
   margin-right: auto;
 }
 
-.row:after {
+.row{
   content: "";
   display: table;
   clear: both;
