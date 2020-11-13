@@ -5,7 +5,6 @@
     text-align: center;
     text-decoration: none;
   }
-<<<<<<< HEAD
 
 article {
   display: grid;
@@ -53,7 +52,6 @@ article {
 
 
 
-=======
   
 .container {
   width: 80%;
@@ -120,7 +118,6 @@ nav a::before{
 nav a:hover::before {
   width: 100%
 }
->>>>>>> daniel_branch
 
 
   /*----------Start of Portfolio Gallery-------------*/
