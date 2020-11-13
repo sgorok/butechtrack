@@ -12,15 +12,20 @@
 <body>
     <h1 class= "heading">Our Team</h1>
     <div class = "image-container">
+        <row>
         <div class = "image" onclick="fetch_info(0)"><img src = "static/Shelli.jpeg"></div>
         <div class = "image" onclick="fetch_info(1)"><img src = "static/James.jpeg"></div>
+        </row>
+        <row>
         <div class = "image" onclick="fetch_info(2)"><img src = "static/Gil.jpeg"></div>
         <div class = "image" onclick="fetch_info(3)"><img src = "static/Dan.jpeg"></div>
         <div class = "image" onclick="fetch_info(4)"><img src = "static/Samantha.jpeg"></div>
+        <row>
         <div class = "image" onclick="fetch_info(5)"><img src = "static/Isaac.jpeg"></div>
         <div class = "image" onclick="fetch_info(6)"><img src = "static/Matan.jpeg"></div>
         <div class = "image" onclick="fetch_info(7)"><img src = "static/Ben.jpeg"></div>
         <div class = "image" onclick="fetch_info(8)"><img src = "static/Deli.jpeg"></div>
+        </row>
     </div>
     <div class = "info-container">
         <img class = "profile" id = profile ><img src = "static/Shelli.jpeg">
@@ -37,7 +42,7 @@
             let profile =["static/Shelli.jpeg","static/James.jpeg","static/Gil.jpeg","static/Dan.jpeg","static/Samantha.jpeg","static/Isaac.jpeg","static/Matan.jpeg","static/Ben.jpeg","static/Deli.jpeg"]
             let name=["Shelli Gorokhovsky","James Heilberg","Gil Lotzky","Daniel Shimon","Samantha Puterman","Isaac Yamnitsky","Matan Ziegel","Ben Steinfeld","Daniel Delijani"]
             let status =["Co Director of Tech","Co Director of Tech","Engineer","Engineer","Engineer","Engineer","Engineer","Engineer","Engineer"]
-            let about = ["Shelli is currently in her third year at Boston University, working toward her B.A. in Computer Science, with a completed minor in Business Administration. She hopes to combine her diverse range of interests in technology, business, environmental sustainability, and psychology, by way of social entrepreneurship. Shelli has experience working in the field of data science and machine learning, and is enjoying learning new skills and tools all the time. When she isn't on a computer, you can find her making a killer shakshuka or looking for green spaces to escape the city.",""]
+            let about = ["Shelli is currently in her third year at Boston University, working toward her B.A. in Computer Science, with a completed minor in Business Administration. She hopes to combine her diverse range of interests in technology, business, environmental sustainability, and psychology, by way of social entrepreneurship. Shelli has experience working in the field of data science and machine learning, and is enjoying learning new skills and tools all the time. When she isn't on a computer, you can find her making a killer shakshuka or looking for green spaces to escape the city.","James is a third-year student at Boston University studying Computer Science and Business. He is passionate about data engineering, big data, and all of its real-world applications. James has experience working with a variety of programming languages and frameworks to solve real-world problems such as algorithmically pricing parametric insurance. In his free time, you can find him eating at Cava while raving about the new Microsoft Flight Simulator.","Gil is a senior at Boston University studying Computer Science and Mathematics. Gil is passionate about the crossover of computer science and the healthcare industry. He is fascinated by how the design and creation of devices and software influence the human experience. As such, he has taken computer science, healthcare, and statistics coursework and has worked in clinical and hospital settings. You can find him developing clinical data science projects or annihilating his friends in a game of backgammon.","Daniel is a junior at Boston University studying Computer Engineering. He is interested in Signal Processing and Software Engineering. In his free time, he enjoys spending time outdoors, whether it's basketball, the beach, or bike riding.",""]
             document.getElementById("profile").src=profile[i];
             document.getElementById("name").innerHTML=name[i];
             document.getElementById("status").innerHTML=status[i];
