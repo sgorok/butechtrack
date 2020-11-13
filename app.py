@@ -8,6 +8,10 @@ def home():
     html_template = 'site.html'
     return render_template(html_template)
 
+@app.route("/theteam")
+def contact():
+  return render_template("theteam.html")
+
 @app.route("/contact")
 def contact():
   return render_template("contact.html")
