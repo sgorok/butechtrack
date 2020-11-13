@@ -24,7 +24,11 @@ article {
   margin-right: auto;
 }
 
-
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .column {
   align-content: center;
