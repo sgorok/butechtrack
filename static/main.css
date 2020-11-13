@@ -7,7 +7,7 @@
   text-decoration: none;
 }
 
-article {
+section {
 display: grid;
 align-content: center;
 float: center;
@@ -15,17 +15,17 @@ width: 100%;
 margin-bottom: 16px;
 padding: 0 8px;
 }
-.article .card {
+.section .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.article .row {
+.section .row {
 content: "";
 display: table;
 clear: both;
 }
 
-.article .column {
+.section.column {
 align-content: center;
 float: center;
 width: 30%;
