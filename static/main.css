@@ -10,7 +10,7 @@
 article {
 display: grid;
 align-content: center;
-float: left;
+float: center;
 width: 100%;
 margin-bottom: 16px;
 padding: 0 8px;
@@ -27,7 +27,7 @@ clear: both;
 
 .article .column {
 align-content: center;
-float: left;
+float: center;
 width: 30%;
 margin-bottom: 16px;
 margin-left: auto;
