@@ -24,12 +24,16 @@ article {
   margin-right: auto;
 }
 
-
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .column {
   align-content: center;
   float: left;
-  width: 30%;
+  width: 33.33%;
   margin-bottom: 16px;
   margin-left: auto;
   padding: 0 8px;
