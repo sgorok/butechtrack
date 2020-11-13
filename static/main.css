@@ -15,24 +15,23 @@ width: 100%;
 margin-bottom: 16px;
 padding: 0 8px;
 }
-.card {
+.article .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.row {
+.article .row {
 content: "";
 display: table;
 clear: both;
 }
 
-.column {
+.article .column {
 align-content: center;
 float: left;
 width: 30%;
 margin-bottom: 16px;
 margin-left: auto;
 padding: 0 8px;
-
 }
 
 @media screen and (max-width: 650px) {
