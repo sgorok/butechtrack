@@ -1,5 +1,5 @@
 body {
-    background: whitesmoke;
+    background: white;
 }
 
 .heading{
@@ -17,7 +17,7 @@ body {
 .image{
     width: 120px;
     height: 120px;
-    background: rgb(56, 83, 236);
+    background: light blue
     margin: 2px 50px;
     border-radius: 50%;
     border: 3px solid black;
