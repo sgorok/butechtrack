@@ -8,7 +8,7 @@
 }
 
 .inner{
-  background-image: url("boston.jpeg");
+  background-image: url('/static/boston.jpeg');
   color: white;
 }
 
