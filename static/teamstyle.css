@@ -49,12 +49,13 @@ img{
 }
 
 .profile{
-   width: 350px;
-    height: 350px;
-    border-radius: 15%;
+    width: 200px;
+    height: 325px;
+    border-radius: 15px;
     padding:10px;
     margin: 0px;
 }
+
 .name{
     margin-top: 80px;
     padding: 0px 15px;
