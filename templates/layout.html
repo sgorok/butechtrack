@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+    <title>{% block title %}{% endblock %} - Tamid Tech @ BU</title>
+    {% endblock %}
+  </head>
+  <!-- Add icon library -->
+  <!-- Make a navigation bar to go to different sections of the page
+            make an anchor
+            then id to the other part of the page you want to go to -->
+  
+  <header class ="nav_bar_header">
+    <div class = "container">
+      <div>
+        <link rel="stylesheet" href="static/main.css" />
+        <img src ="static/tamidlogo.png" alt = "tamidlogo" class="tamidlogo" width="275px" height="75px">
+        <nav>
+            <ul> <!--unordered list and then each li is a list item-->
+                <li><a href="/">Home</a></li> 
+                <li><a href="">About</a></li> 
+                <li><a href="{{ url_for('theteam') }}">Our Team</a></li> 
+                <li><a href="">Projects</a></li> 
+                <li><a href="">Blog</a></li> 
+                <li><a href="{{ url_for('contact') }}">Contact</a></li> 
+            </ul>
+
+        </nav>
+      </div>
+    </div>
+  </header> 
+
+  <body>
+    <div id="content">{% block content %} {% endblock %}</div>
+    <div id="footer">
+      &copy; Connect with us
+      <a href="https://www.tamidbu.org/">here</a>.
+    </div>
+  </body>
+</html>

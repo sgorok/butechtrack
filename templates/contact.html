@@ -1,12 +1,13 @@
-<!doctype html>
-<html>
-	<head>
+{% extends "layout.html" %}
+
+	{% block head %}
+    {{ super() }}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tamid @ BU Contact Form</title>
 		<link rel="stylesheet" href="static/style3.css">
-	</head>
-	<body>
+    {% endblock %}
+    {% block content %}
 		<section>
 			<div class="container">
 				<div class="contactinfo">
@@ -67,8 +68,7 @@
 				</div>
 			</div>
 		</section>
-	</body>
-</html>
+{% endblock %}
 
 
 

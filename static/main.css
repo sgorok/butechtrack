@@ -16,6 +16,10 @@ article {
   padding: 0 8px;
 }
 
+.image{
+  border-radius: 100%;
+}
+
 .inner{
   background-image: url('/static/img/boston.jpeg');
   color: white;

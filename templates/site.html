@@ -1,76 +1,16 @@
-<?php
-if($_POST["message"]) {
-    mail("sgor@bu.edu", "Form to email message", $_POST["message"], "From: GitPages@Form.com");
-}
-?>
-<!DOCTYPE html>
-<html>
+{% extends "layout.html" %}
 
-     
-      <!-- Add icon library -->
-      <!-- Make a navigation bar to go to different sections of the page
-            make an anchor
-            then id to the other part of the page you want to go to -->
-     <header class ="nav_bar_header">
-        <div class = "container">
-            
-            <img src ="static/tamidlogo.png" alt = "tamidlogo" class="tamidlogo" width="275px" height="75px"> 
+{% block title %}Home Page{% endblock %}
 
-            <nav>
-                <ul> <!--unordered list and then each li is a list item-->
-                    <li><a href="">Home</a></li> 
-                    <li><a href="">About</a></li> 
-                    <li><a href="{{ url_for('theteam') }}">Our Team</a></li> 
-                    <li><a href="">Projects</a></li> 
-                    <li><a href="">Blog</a></li> 
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li> 
-                </ul>
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="static/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
 
-            </nav>
-        </div>
-     </header>  
-
-     <div class="container">
-      {% block content %}
-      {% endblock %}
-    </div>
-
-
-
-    <!-- End of Navigation Bar--> 
-    <head>
-        <title>
-            TAMID @ BU Technological Consulting Track!
-        </title>
-        <link rel="stylesheet" href="static/main.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    </head>
-    <body>
+{% block content %}
+      {{ super() }}
 	    <!-- Isaac's code starts -->
-	    <div
-      style="
-        background-image: url('static/boston.jpeg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        height: 50%;
-      "
-    >
-      <div
-        style="
-          text-align: center;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: white;
-          font-family: Arial;
-        "
-      >
-      </div>
-    </div>
     <!-- removed the second header
     <div class="content">
       <div class="inner">
@@ -80,29 +20,27 @@ if($_POST["message"]) {
     </div>-->
 	<!-- Isaac's code ends -->
 
-
+  </div>
         <header id = "header">
             <div class = "logo">
                 <!--Insert Logo Here-->
             </div>
-		<div class="content">
-        	<div class="inner">
-        		<h1>Tech Consulting</h1>
-        		<p>TAMID at Boston University</p>
-            </div>
-        </div>
-
-
-        </header>
+        <div style="
+  text-align: center;
+">
+        <h1>Tech Consulting</h1>
+        <p>TAMID at Boston University</p> 
+ 
         <h1>
             About
         </h1>
         <p>
-            Boston University's TAMID Group launched its first ever technological consulting track in the Fall 2020 semester...
+            Boston University's TAMID Group launched its first ever technological consulting track in the Fall 2020 semester!
         </p>
         <h1 style = "text-align:center">
             Meet the Team
         </h1>
+        </div>
 <!-- MEET THE TEAM -->
 <section>
   <div class="row">
@@ -258,7 +196,10 @@ if($_POST["message"]) {
       </div>
     </div> 
   </div>   
-</section>   
+</section>
+
+{% endblock %}
+
 <!-- Portfolio Gallery Grid 
     
 
@@ -407,7 +348,7 @@ function showSlides(n) {
           dots[slideIndex-1].className += " active";
         }
     </script>
-<!-- End of Portfolio -->
+     End of Portfolio -->
 <!-- Contact  (this section was moved to a new page)
 <h1>Contact</h1>
 <form method="post" action="mailto:sgor@bu.edu">
@@ -436,6 +377,3 @@ function showSlides(n) {
         <a href="https://github.com/sgorok/butechtrack" class="fa fa-github">
     </ul>
   -->
-
-
-</html>
